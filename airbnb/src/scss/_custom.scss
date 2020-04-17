@@ -100,3 +100,99 @@ h3 {
         }
     }
 }
+
+/* ***** => MAIN: QUE HACER <= ***** */
+.hospedaje {
+    color: $hospedaje;
+}
+
+.concierto {
+    color: $concierto;
+}
+
+.clase {
+    color: $clase;
+}
+
+.paseo {
+    color: $paseo;
+}
+
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    .card {
+        img {
+            width: 100%;
+        }
+        .info {
+            .categoria{
+                text-transform: uppercase;
+                font-size: .9rem;
+                font-weight: 700;
+            }
+            .titulo{
+                font-size: 1.6rem;
+                font-weight: 900;
+                margin: 0;
+            }
+            .precio{
+                color: $oscuro;
+                font-size: .9rem;
+            }   
+        }
+    }
+}
+
+/* ***** => MAIN: PREMIUM <= ***** */
+.premium {
+    background-image: url('./../img/hospedaje-pro.jpg');
+    background-repeat: no-repeat; 
+    grid-template-columns: unset;
+    height: 30rem;
+    @include tablet {
+        grid-template-columns: auto 30%;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+        @include tablet {
+            grid-column: 2/3;
+        }
+        h3 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: $claro;
+            @include tablet {
+                text-align: right;
+                color: $oscuro;
+            }
+        }
+        .boton {
+            @include boton($claro, $oscuro, $primario);
+        }
+    }
+}
+
+/* ***** => MAIN: DESTINOS <= ***** */
+
+.destinos {
+    .contenedor-cards {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        .card {
+            position: relative;
+            .info {
+                position: absolute;
+                bottom: 1rem;
+                left: 1rem;
+                .titulo {
+                    font-size: 1.8rem;
+                    color: $claro;
+                }
+            }
+        }
+    }
+}

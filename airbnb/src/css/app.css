@@ -104,3 +104,131 @@ h3 {
   text-transform: uppercase;
   font-size: 1.2rem;
 }
+
+/* ***** => MAIN: QUE HACER <= ***** */
+.hospedaje {
+  color: #275154;
+}
+
+.concierto {
+  color: #DA595E;
+}
+
+.clase {
+  color: #598DDA;
+}
+
+.paseo {
+  color: #940AD4;
+}
+
+.contenedor-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+}
+
+.contenedor-cards .card img {
+  width: 100%;
+}
+
+.contenedor-cards .card .info .categoria {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.contenedor-cards .card .info .titulo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0;
+}
+
+.contenedor-cards .card .info .precio {
+  color: #484848;
+  font-size: .9rem;
+}
+
+/* ***** => MAIN: PREMIUM <= ***** */
+.premium {
+  background-image: url("./../img/hospedaje-pro.jpg");
+  background-repeat: no-repeat;
+  grid-template-columns: unset;
+  height: 30rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .premium {
+    grid-template-columns: auto 30%;
+  }
+}
+
+.premium .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .premium .info {
+    grid-column: 2/3;
+  }
+}
+
+.premium .info h3 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #FFFFFF;
+}
+
+@media only screen and (min-width: 768px) {
+  .premium .info h3 {
+    text-align: right;
+    color: #484848;
+  }
+}
+
+.premium .info .boton {
+  background-color: #FFFFFF;
+  display: block;
+  padding: 1rem;
+  color: #484848;
+  text-decoration: none;
+  font-weight: 400;
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  transition: all .5s ease-in-out;
+}
+
+.premium .info .boton:hover {
+  cursor: pointer;
+  background-color: #DA595E;
+  border: 1px solid #DA595E;
+  color: #FFFFFF;
+}
+
+/* ***** => MAIN: DESTINOS <= ***** */
+.destinos .contenedor-cards {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.destinos .contenedor-cards .card {
+  position: relative;
+}
+
+.destinos .contenedor-cards .card .info {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.destinos .contenedor-cards .card .info .titulo {
+  font-size: 1.8rem;
+  color: #FFFFFF;
+}
