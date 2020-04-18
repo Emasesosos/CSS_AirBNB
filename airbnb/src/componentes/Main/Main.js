@@ -10,6 +10,10 @@ import populares1 from './../../img/populares1.jpg';
 import populares2 from './../../img/populares2.jpg';
 import populares3 from './../../img/populares3.jpg';
 import populares4 from './../../img/populares4.jpg';
+import newyork1 from './../../img/newyork1.jpg';
+import newyork2 from './../../img/newyork2.jpg';
+import newyork3 from './../../img/newyork3.jpg';
+import newyork4 from './../../img/newyork4.jpg';
 
 const Main = () => {
     return (
@@ -122,8 +126,46 @@ const Main = () => {
                 </div>
             </section>
 
+            <section className="modulo">
+                <h2>Que hacer en New York</h2>
+                <div className="contenedor-cards">
+                    <div className="card">
+                        <img src={newyork1} alt="newyork1"/>
+                        <div className="info">
+                            <p className="categoria concierto">Clase</p>
+                            <p className="titulo">Comida Japonesa para Principiantes</p>
+                            <p className="precio">$300 por persona</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={newyork2} alt="newyork2"/>
+                        <div className="info">
+                            <p className="categoria concierto">Concierto</p>
+                            <p className="titulo">Festival EDM 2018</p>
+                            <p className="precio">$1,200 por persona</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={newyork3} alt="newyork3"/>
+                        <div className="info">
+                            <p className="categoria clase">Clase de Cocina</p>
+                            <p className="titulo">Paella Dominicana</p>
+                            <p className="precio">$200 por persona</p>
+                        </div>
+                    </div>
+                    <div className="card">
+                        <img src={newyork4} alt="newyork4"/>
+                        <div className="info">
+                            <p className="categoria paseo">Paseos</p>
+                            <p className="titulo">Paseo a Caballo</p>
+                            <p className="precio">$100 por persona</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
     );
 }
- 
+
 export default Main; 

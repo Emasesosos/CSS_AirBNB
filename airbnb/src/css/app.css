@@ -232,3 +232,74 @@ h3 {
   font-size: 1.8rem;
   color: #FFFFFF;
 }
+
+/* ***** => FOOTER <= ***** */
+.footer .nav-footer {
+  padding: 1rem;
+}
+
+.footer .nav-footer h3 {
+  font-size: 1.2rem;
+}
+
+.footer .nav-footer a {
+  display: block;
+  margin-bottom: .5rem;
+  text-decoration: none;
+  color: #484848;
+}
+
+.footer .nav-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .nav-footer a:last-of-type {
+  margin: 0;
+}
+
+/** Redes Socialaes**/
+.sociales ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0;
+  /* justify-content: center;
+    justify-content: space-around; */
+  /* justify-content: space-between; */
+  flex: 1 0 auto;
+  list-style: none;
+}
+
+.sociales ul li {
+  margin-right: 1rem;
+}
+
+.sociales ul li:last-of-type {
+  margin-right: 0;
+}
+
+.sociales ul li a {
+  text-decoration: none;
+}
+
+.sociales ul li a:before {
+  font-family: "Font Awesome 5 Brands";
+  color: #484848;
+  font-size: 1.8rem;
+}
+
+.sociales ul li a[href*='facebook.com']::before {
+  content: "\f39e";
+}
+
+.sociales ul li a[href*='twitter.com']::before {
+  content: "\f099";
+}
+
+.sociales ul li a[href*='instagram.com']::before {
+  content: "\f16d";
+}
+
+.sociales ul li span {
+  display: none;
+}
