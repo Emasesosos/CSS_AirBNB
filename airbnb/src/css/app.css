@@ -213,6 +213,26 @@ h3 {
   color: #FFFFFF;
 }
 
+.btn-flotante {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  color: #484848;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 13px 19px -10px rgba(0, 0, 0, 0.4);
+  transition: all .5s ease-in-out;
+}
+
+.btn-flotante:hover {
+  background-color: #DA595E;
+  color: #FFFFFF;
+}
+
 /* ***** => MAIN: DESTINOS <= ***** */
 .destinos .contenedor-cards {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -234,6 +254,38 @@ h3 {
 }
 
 /* ***** => FOOTER <= ***** */
+.activo {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  color: #FFFFFF;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  background-color: #DA595E;
+}
+
+.activo h3 {
+  color: #484848;
+}
+
+.footer {
+  position: fixed;
+  bottom: -100%;
+  background-color: #FFFFFF;
+  width: 100%;
+  -webkit-box-shadow: 0px -13px 24px -10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px -13px 24px -10px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px -13px 24px -10px rgba(0, 0, 0, 0.32);
+  transition: all .3s ease-in;
+  padding: 4rem 0;
+}
+
+.footer.activoF {
+  bottom: 0;
+}
+
 .footer .nav-footer {
   padding: 1rem;
 }
